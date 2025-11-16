@@ -45,7 +45,7 @@ class Rocket {
     // this.vy = rand(-9.6, -7.6);
     // this.vx = rand(-0.6, 0.6);
 
-    this.vy = rand(-13.6, -10.6);
+    this.vy = rand(-10.6, -10.6);
     this.vx = rand(-0.9, 0.9);
     this.color = `hsl(${randInt(0, 360)},80%,60%)`;
     this.trail = [];

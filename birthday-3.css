@@ -172,13 +172,13 @@ canvas {
   }
 
   #profile img {
-    top: 30%;
+    top: 35%;
     margin: auto;
     position: absolute;
     transform: translateX(50%);
     left: 35%;
 
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
   }
 }
