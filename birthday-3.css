@@ -165,14 +165,14 @@ canvas {
   }
   #premiumText {
     font-size: 20px;
-    top: 25%;
+    top: 28%;
   }
   #clap {
     font-size: 36px;
   }
 
   #profile img {
-    top: 10%;
+    top: 30%;
     margin: auto;
     position: absolute;
     transform: translateX(50%);

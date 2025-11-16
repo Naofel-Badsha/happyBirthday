@@ -46,7 +46,7 @@ class Rocket {
     // this.vx = rand(-0.6, 0.6);
 
     this.vy = rand(-13.6, -10.6);
-    this.vx = rand(-0.15, 0.15);
+    this.vx = rand(-0.9, 0.9);
     this.color = `hsl(${randInt(0, 360)},80%,60%)`;
     this.trail = [];
     this.size = 3 + Math.random() * 2;
@@ -203,7 +203,7 @@ function explodeCartoon(x, y, color) {
     );
   }
   // bounce letters
-  spawnBouncyText("Md Sabbir Rahman & Naofel Badsha & samiyul Sayhan");
+  spawnBouncyText("Happy Birthday Afsana Tajnin Preo🥰");
 }
 
 function explodePremium(x, y, color) {
