@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BirthDay-3</title>
+  <link rel="stylesheet" href="birthday-3.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+
+
+ 
+  <div class="ui">
+    <div class="modes">
+      <button class="mode active" data-mode="real">Realistic</button>
+      <button class="mode" data-mode="cartoon">Cartoon</button>
+      <button class="mode" data-mode="premium">Premium</button>
+      <button class="mode" data-mode="mixed">All — Mix</button>
+    </div>
+
+    <div class="controls">
+      <button id="launch">🚀 Launch</button>
+      <label><input id="auto" type="checkbox" checked> Auto</label>
+    </div>
+  </div>
+
+
+
+
+  <!-- overlay texts -->
+  <div id="overlay">
+    <div id="smokeName" class="nameText">Sabbir</div>
+    <div id="bounceHolder"></div> <!-- cartoon letters appear here -->
+    <div id="premiumText" class="nameText premium">Sabbir — Happy Birthday!</div>
+    <div id="clap" class="clap">👏</div>
+    
+    <div id="profile"><img src="https://i.ibb.co.com/DfNJdmrk/imageye-imgi-37-single-team.jpg" alt=""></div>
+  </div>
+
+  <script src="birthday-3.js"></script>
+</body>
+</html>

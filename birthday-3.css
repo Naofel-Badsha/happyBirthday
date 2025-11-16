@@ -1,0 +1,184 @@
+:root {
+  --bg: #03030a;
+  --panel: rgba(255, 255, 255, 0.06);
+  --accent: #ffb86b;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+  background: linear-gradient(180deg, #02020a, var(--bg));
+  color: #fff;
+  overflow: hidden;
+}
+canvas {
+  position: fixed;
+  inset: 0;
+  display: block;
+  z-index: 0;
+}
+
+/* UI */
+.ui {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.modes {
+  display: flex;
+  gap: 8px;
+}
+.mode {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #ddd;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.mode.active {
+  background: linear-gradient(90deg, var(--accent), #ff7ab6);
+  color: #111;
+  border: none;
+  box-shadow: 0 6px 18px rgba(255, 120, 90, 0.12);
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 6px;
+}
+#launch {
+  background: var(--accent);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  color: #111;
+}
+.controls label {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* overlay texts */
+#overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 40;
+}
+.nameText {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+}
+#smokeName {
+  top: 16%;
+  font-size: 56px;
+  color: #ffd56b;
+  text-shadow: 0 12px 40px rgba(255, 170, 60, 0.18);
+  filter: blur(0.6px);
+  transition: all 900ms ease;
+}
+#premiumText {
+  top: 22%;
+  font-size: 36px;
+  color: #fff2d6;
+  text-shadow: 0 8px 40px rgba(255, 200, 120, 0.2);
+  transition: all 900ms ease;
+}
+#clap {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  font-size: 48px;
+  opacity: 0;
+  transition: all 600ms ease;
+}
+
+/* cartoon letter holder */
+#bounceHolder {
+  position: absolute;
+  left: 50%;
+  top: 12%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  pointer-events: none;
+}
+
+/* user Profile */
+#profile img {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 100%;
+  position: relative;
+}
+
+#profile img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  top: 30%;
+  margin: auto;
+  position: absolute;
+  transform: translateX(50%);
+  left: 50%;
+}
+
+/* letter style */
+.cartoon-letter {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 44px;
+  margin: 0 2px;
+  color: #fff;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+  transform-origin: center;
+}
+
+/* small screens */
+@media (max-width: 700px) {
+  #smokeName {
+    font-size: 34px;
+    top: 20%;
+  }
+  .cartoon-letter {
+    font-size: 28px;
+  }
+  #premiumText {
+    font-size: 20px;
+    top: 25%;
+  }
+  #clap {
+    font-size: 36px;
+  }
+
+  #profile img {
+    top: 10%;
+    margin: auto;
+    position: absolute;
+    transform: translateX(50%);
+    left: 35%;
+
+    width: 80px;
+    height: 80px;
+  }
+}
