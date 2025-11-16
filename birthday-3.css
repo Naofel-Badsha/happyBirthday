@@ -172,7 +172,7 @@ canvas {
   }
 
   #profile img {
-    top: 40%;
+    top: 50%;
     margin: auto;
     position: absolute;
     transform: translateX(50%);
